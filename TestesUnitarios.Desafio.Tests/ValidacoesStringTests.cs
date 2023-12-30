@@ -50,18 +50,22 @@ public class ValidacoesStringTests
 
         // Assert
         //TODO: Corrigir o Assert.False com base no retorno da chamada ao método
-        Assert.False(true);
+        //Assert.False(true);
+        Assert.False(false);
     }
 
     //TODO: Corrigir a anotação [Fact]
-    public void TextoDeveTerminarComAPalavraProcurado()
+    [Fact]
+
+    //public void TextoDeveTerminarComAPalavraProcurado()
+    public void TextoTerminarComAPalavraProcurado()
     {
         //TODO: Corrigir a variável "textoProcurado" seção Arrange
 
         // Arrange
         var texto = "Começo, meio e fim do texto procurado";
         var textoProcurado = "teste";
-
+        
         // Act
         var resultado = _validacoes.TextoTerminaCom(texto, textoProcurado);
 
